@@ -15,7 +15,6 @@ include:
   # Include ML artifact resources for the ml project
   # Defines model and experiment
   - ./databricks-resources/ml-artifacts-resource.yml
-
   # Include workflow resources of the ml project
   # Defines workflow for model training -> validation -> deployment
   - ./databricks-resources/model-workflow-resource.yml
@@ -33,17 +32,19 @@ environments:
     default: true
     workspace:
       # TODO: add dev workspace URL
-      host:
+      host: https://adb-984752964297111.11.azuredatabricks.net/
 
   staging:
     workspace:
-      host: https://adb-4301376284584187.7.azuredatabricks.net
+      #host: https://adb-4301376284584187.7.azuredatabricks.net
+      host: https://adb-984752964297111.11.azuredatabricks.net/
 
   prod:
     workspace:
-      host: https://adb-3011150083119087.7.azuredatabricks.net
+      #host: https://adb-3011150083119087.7.azuredatabricks.net
+      host: https://adb-984752964297111.11.azuredatabricks.net/
 
   test:
     workspace:
-      host: https://adb-7580217694832751.11.azuredatabricks.net/
-
+      #host: https://adb-7580217694832751.11.azuredatabricks.net/
+      host: https://adb-984752964297111.11.azuredatabricks.net/
